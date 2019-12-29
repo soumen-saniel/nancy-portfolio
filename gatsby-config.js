@@ -7,7 +7,16 @@ module.exports = {
     author: 'Nancy Goel'
   },
   plugins: [
+    /**
+     * Provides drop-in support for server rendering data added with React Helmet.
+     * React Helmet is a component which lets you control your document head
+     * using their React component.
+     */
     'gatsby-plugin-react-helmet',
+    /**
+     * A Gatsby source plugin for sourcing data into your
+     * Gatsby application from your local filesystem.
+     */
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -15,8 +24,21 @@ module.exports = {
         path: `${__dirname}/src/assets`
       }
     },
+    /**
+     * Creates ImageSharp nodes from image types that are supported
+     * by the Sharp image processing library and provides fields in
+     * their GraphQL types for processing your images in a variety of
+     * ways including resizing, cropping, and creating responsive images.
+     */
     'gatsby-transformer-sharp',
+    /**
+     * Exposes several image processing functions built on the Sharp image processing library.
+     */
     'gatsby-plugin-sharp',
+    /**
+     * This plugin enables defining manifest for out web app
+     * Helpful in using things like splash screen.
+     */
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -29,6 +51,9 @@ module.exports = {
         icon: 'src/assets/logo.png'
       }
     },
+    /**
+     * This plugin installs font files from Google fonts.
+     */
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
@@ -46,7 +71,13 @@ module.exports = {
         ]
       }
     },
+    /**
+     * This plugin let's us use scss in the project.
+     */
     'gatsby-plugin-sass',
+    /**
+     * This plugin let's us use absolute paths in the JS files.
+     */
     {
       resolve: 'gatsby-plugin-root-import',
       options: {

@@ -14,7 +14,8 @@ yarn
 // Start development server
 yarn develop
 ```
-## Helpful Links
+
+## Helpful links
 
 ### Links related to markdown
 
