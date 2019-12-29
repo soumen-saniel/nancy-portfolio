@@ -13,6 +13,11 @@ small {
   font-size: 13.5034px;
   line-height: 17px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 9.6px;
+    line-height: 12px;
+  }
 }
 
 p {
@@ -22,6 +27,11 @@ p {
   font-size: 18px;
   line-height: 23px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 
 h4 {
@@ -31,6 +41,11 @@ h4 {
   font-size: 23.994px;
   line-height: 29px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 h3 {
@@ -40,6 +55,11 @@ h3 {
   font-size: 31.984px;
   line-height: 39px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 18.75px;
+    line-height: 23px;
+  }
 }
 
 h2 {
@@ -49,6 +69,11 @@ h2 {
   font-size: 42.6347px;
   line-height: 52px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 23.4375px;
+    line-height: 29px;
+  }
 }
 
 h1 {
@@ -58,4 +83,9 @@ h1 {
   font-size: 56.832px;
   line-height: 69px;
   color: inherit;
+
+  @include media(">xs", "<sm") {
+    font-size: 29.2969px;
+    line-height: 36px;
+  }
 }

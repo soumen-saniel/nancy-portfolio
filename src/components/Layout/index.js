@@ -1,7 +1,7 @@
 import React from 'react'
 import PropType from 'prop-types'
 import 'normalize.css/normalize.css'
-import 'src/style.scss'
+import 'src/styles/index.scss'
 import './layout.module.scss'
 
 function Layout (props) {
