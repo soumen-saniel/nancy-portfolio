@@ -1,0 +1,61 @@
+@import 'variables';
+
+// General
+body {
+  color: $text-primary;
+}
+
+// Typography
+small {
+  font-family: $font-family-content;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: 13.5034px;
+  line-height: 17px;
+  color: inherit;
+}
+
+p {
+  font-family: $font-family-content;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: 18px;
+  line-height: 23px;
+  color: inherit;
+}
+
+h4 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: 23.994px;
+  line-height: 29px;
+  color: inherit;
+}
+
+h3 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: 31.984px;
+  line-height: 39px;
+  color: inherit;
+}
+
+h2 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: $font-weight-regular;
+  font-size: 42.6347px;
+  line-height: 52px;
+  color: inherit;
+}
+
+h1 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  font-size: 56.832px;
+  line-height: 69px;
+  color: inherit;
+}
