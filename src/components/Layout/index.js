@@ -2,13 +2,13 @@ import React from 'react'
 import PropType from 'prop-types'
 import 'normalize.css/normalize.css'
 import 'src/styles/index.scss'
-import './layout.module.scss'
+import styles from './style.module.scss'
 
 function Layout (props) {
   return (
-    <React.Fragment>
+    <div className={styles.root}>
       {props.children}
-    </React.Fragment>
+    </div>
   )
 }
 

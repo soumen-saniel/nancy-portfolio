@@ -83,6 +83,7 @@ h1 {
   font-size: 56.832px;
   line-height: 69px;
   color: inherit;
+  margin-top: 0px;
 
   @include media(">xs", "<sm") {
     font-size: 29.2969px;

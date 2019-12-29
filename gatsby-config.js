@@ -48,7 +48,7 @@ module.exports = {
         background_color: '#F2F1F0',
         theme_color: '#4EC5D1',
         display: 'Nancy Goel',
-        icon: 'src/assets/logo.png'
+        icon: 'src/assets/logoIcon.png'
       }
     },
     /**
