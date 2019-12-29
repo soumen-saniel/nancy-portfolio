@@ -12,3 +12,6 @@ yarn
 // Start development server
 yarn develop
 ```
+## Normalize CSS
+
+http://nicolasgallagher.com/about-normalize-css/
