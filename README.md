@@ -4,15 +4,21 @@
 
 ### Instalation and starting development server
 
-```javascript
-// Install Gatsby CLI globally
+```bash
+# Install Gatsby CLI globally
 yarn global add gatsby-cli
 
-// Install dependencies
+# Install dependencies
 yarn
 
-// Start development server
+# Start development server
 yarn develop
+```
+
+### Deploying to github-pages
+
+```bash
+yarn deploy:github
 ```
 
 ## Helpful links
