@@ -1,10 +1,12 @@
 const path = require('path')
 
 module.exports = {
+  pathPrefix: '/nancy-portfolio',
   siteMetadata: {
     title: 'Nancy Goel',
     description: 'Nancy Goel',
-    author: 'Nancy Goel'
+    author: 'Nancy Goel',
+    siteUrl: 'https://soumen-saniel.github.io/nancy-portfolio/'
   },
   plugins: [
     /**

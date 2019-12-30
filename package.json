@@ -38,11 +38,11 @@
     "gatsby"
   ],
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean",
     "deploy:github": "npm run build && node ./scripts/deploy-github",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -51,5 +51,5 @@
     "type": "git",
     "url": "https://github.com/soumen-saniel/nancy-portfolio"
   },
-  "homepage": "https://github.com/soumen-saniel/nancy-portfolio#readme"
+  "homepage": "https://soumen-saniel.github.io/nancy-portfolio/"
 }
