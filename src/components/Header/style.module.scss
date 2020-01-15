@@ -1,0 +1,19 @@
+@import 'src/styles/variables.scss';
+
+.root {
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+.content {
+  height: 50px;
+  margin: 0 auto;
+  @include media(">md") {
+    width: 80vw;
+  }
+}
+
+.logo {
+  height: 100%;
+}

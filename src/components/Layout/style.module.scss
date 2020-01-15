@@ -2,6 +2,29 @@
 
 .root {
   background: $bg-3;
+  background-image: url("../../assets/bg-path-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 100vh;
+  position: relative;
   width: 100vw;
+}
+
+.content {
+  background: $ct-1;
+  background-image: url("../../assets/bg-path-1.svg");
+  background-repeat: no-repeat;
+  background-position: -1px -1px;
+  background-size: calc(100vh - 82px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: calc(100vh - 140px);
+  margin: 0 auto;
+  @include media(">sm") {
+    width: 80vw;
+  }
+
+  @include media ("<=sm") {
+    width: calc(100vw - 40px);
+  }
 }
