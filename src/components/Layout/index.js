@@ -10,7 +10,9 @@ function Layout (props) {
     <div className={styles.root}>
       <Header/>
       <main className={styles.content}>
-        {props.children}
+        <div className={styles.contentWrapper}>
+          {props.children}
+        </div>
       </main>
     </div>
   )
