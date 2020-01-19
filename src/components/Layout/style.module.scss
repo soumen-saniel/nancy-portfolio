@@ -12,14 +12,14 @@
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
     content: " ";
     height: 150%;
-    left: -57%;
+    left: -52%;
     position: absolute;
     top: -35%;
     transform: rotate(140deg);
     width: 100%;
 
     @include media(">=xl") {
-      left: -54%;
+      left: -50%;
       top: -25%;
     }
   }
@@ -51,7 +51,7 @@
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
     content: " ";
     height: 150%;
-    left: -50%;
+    left: -45%;
     position: absolute;
     top: -35%;
     transform: rotate(140deg);

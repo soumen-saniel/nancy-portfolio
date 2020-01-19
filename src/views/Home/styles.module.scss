@@ -1,6 +1,6 @@
 @import 'src/styles/variables.scss';
 
-.root {
+.home_root {
   display: grid;
   grid-template-columns: 150px auto 100px;
   grid-template-rows: 100%;
@@ -9,10 +9,30 @@
 }
 
 
-.menuSection {}
+.home_menu {}
 
-.contentSection {
+.home_content {
   display: flex;
 }
 
-.socialLinksSection {}
+.home_social_links {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.home_explore_more {
+  align-items: center;
+  bottom: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: absolute;
+
+  div {
+    color: $bg-2;
+    margin-bottom: 45px;
+    margin-left: 2px;
+    transform: rotate(-90deg);
+  }
+}

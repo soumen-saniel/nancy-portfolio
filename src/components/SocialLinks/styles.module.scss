@@ -1,0 +1,16 @@
+@import 'src/styles/variables.scss';
+
+.root {
+  display: inline-block;
+  height: 210px;
+  width: 30px;
+
+  a {
+    cursor: pointer;
+  }
+
+  img {
+    margin-bottom: 30px;
+    width: 30px;
+  }
+}
