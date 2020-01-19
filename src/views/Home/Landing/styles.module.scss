@@ -7,6 +7,10 @@
   height: 100%;
   position: relative;
   width: 100%;
+
+  @include media("<md") {
+    flex-flow: column;
+  }
 }
 
 .sectionContent {
@@ -24,6 +28,19 @@
   section {
     margin-top: 50px;
   }
+
+  @include media("<md") {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 50%;
+    justify-content: center;
+    width: 100%;
+
+    section {
+      display: none;
+    }
+  }
 }
 
 .sectionImg {
@@ -33,5 +50,12 @@
 
   @include media ("<xl") {
     flex: 0 0 40%;
+  }
+
+  @include media("<md") {
+    align-self: start;
+    align-self: flex-start;
+    height: 50%;
+    width: 100%;
   }
 }
