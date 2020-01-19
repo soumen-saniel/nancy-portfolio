@@ -17,6 +17,11 @@
     top: -35%;
     transform: rotate(140deg);
     width: 100%;
+
+    @include media(">=xl") {
+      left: -54%;
+      top: -25%;
+    }
   }
 }
 
@@ -24,11 +29,17 @@
   background: $ct-1;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 110px);
   margin: 0 auto;
+  max-height: 800px;
+  max-width: 1300px;
   overflow: hidden;
   position: relative;
-  width: 80vw;
+  width: 90vw;
+
+  @include media("<xl") {
+    height: calc(100vh - 110px);
+  }
 
   @include media("<sm") {
     height: calc(100vh - 100px);

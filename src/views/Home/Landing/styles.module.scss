@@ -1,0 +1,37 @@
+@import 'src/styles/variables.scss';
+
+.root {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.sectionContent {
+  flex: 0 0 45%;
+
+  h1 {
+    color: $ct-2;
+  }
+
+  h4 {
+    border-left: 6px solid #D7F2F7;
+    padding-left: 35px;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+}
+
+.sectionImg {
+  align-self: end;
+  align-self: flex-end;
+  flex: 0 0 45%;
+
+  @include media ("<xl") {
+    flex: 0 0 40%;
+  }
+}
