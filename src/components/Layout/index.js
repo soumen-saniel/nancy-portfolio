@@ -7,10 +7,10 @@ import Header from 'src/components/Header'
 
 function Layout (props) {
   return (
-    <div className={styles.root}>
+    <div className={styles.layout_root}>
       <Header/>
-      <main className={styles.content}>
-        <div className={styles.contentWrapper}>
+      <main className={styles.layout_content}>
+        <div className={styles.layout_content_wrapper}>
           {props.children}
         </div>
       </main>

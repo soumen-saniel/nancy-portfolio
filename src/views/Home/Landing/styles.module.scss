@@ -1,6 +1,6 @@
 @import 'src/styles/variables.scss';
 
-.root {
+.landing_root {
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -13,7 +13,7 @@
   }
 }
 
-.sectionContent {
+.landing_section_content {
   flex: 0 0 50%;
 
   h1 {
@@ -29,13 +29,17 @@
     margin-top: 50px;
   }
 
-  @include media("<md") {
-    align-items: center;
-    display: flex;
-    flex-flow: column;
-    height: 50%;
-    justify-content: center;
-    width: 100%;
+  @include media("<sm") {
+    flex-basis: auto;
+    padding: 20px;
+    
+    h1, small {
+      text-align: center;
+    }
+
+    h4 {
+      padding-left: 20px;
+    }
 
     section {
       display: none;
@@ -43,19 +47,27 @@
   }
 }
 
-.sectionImg {
+.landing_section_img {
   align-self: end;
   align-self: flex-end;
-  flex: 0 0 45%;
+  flex: 0 0 50%;
+  overflow: visible;
 
-  @include media ("<xl") {
-    flex: 0 0 40%;
-  }
-
-  @include media("<md") {
+  @include media("<sm") {
     align-self: start;
     align-self: flex-start;
+    flex-basis: 65%;
     height: 50%;
     width: 100%;
+  }
+}
+
+.landing_profile_img {
+  max-width: 450px;
+  overflow: visible;
+  width: 100%;
+
+  @include media ("<xl") {
+    max-width: 400px;
   }
 }

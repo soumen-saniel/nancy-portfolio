@@ -1,6 +1,6 @@
 @import 'src/styles/variables.scss';
 
-.root {
+.layout_root {
   background: $bg-3;
   height: 100vh;
   overflow: hidden;
@@ -10,29 +10,21 @@
   &:before {
     background-color: $bg-1;
     box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(43% 0%, 63% 43%, 23% 100%, 0 100%, 0 0);
     content: " ";
-    height: 150%;
-    left: -52%;
+    height: 100%;
     position: absolute;
-    top: -35%;
-    transform: rotate(140deg);
     width: 100%;
-
-    @include media(">=xl") {
-      left: -50%;
-      top: -25%;
-    }
   }
 }
 
-.content {
+.layout_content {
   background: $ct-1;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 120px);
   margin: 0 auto;
-  max-height: 800px;
-  max-width: 1300px;
+  max-width: 1600px;
   overflow: hidden;
   position: relative;
   width: 90vw;
@@ -49,17 +41,15 @@
   &:before {
     background-color: #FFF;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.8);
+    clip-path: polygon(50% 0%, 70% 43%, 30% 100%, 0 100%, 0 0);
     content: " ";
-    height: 150%;
-    left: -45%;
+    height: 100%;
     position: absolute;
-    top: -35%;
-    transform: rotate(140deg);
     width: 100%;
   }
 }
 
-.contentWrapper {
+.layout_content_wrapper {
   height: 100%;
   position: absolute;
   width: 100%;
@@ -67,41 +57,15 @@
 }
 
 @media (orientation: portrait) {
-  .root {
+  .layout_root {
     &:before {
-      height: 100%;
-      left: -40%;
-      top: -53%;
-      transform: rotate(130deg);
-      width: 150%;
+      clip-path: polygon(100% 0, 100% 50%, 70% 65%, 0 35%, 0 0);
     }
   }
 
-  .content {
+  .layout_content {
     &:before {
-      height: 100%;
-      left: -35%;
-      top: -50%;
-      transform: rotate(130deg);
-      width: 150%;
-    }
-  }
-
-  @include media(">sm", "<=lg") {
-    .root {
-      &:before {
-        left: -10%;
-        top: -60%;
-        transform: rotate(130deg);
-      }
-    }
-  
-    .content {
-      &:before {
-        left: -10%;
-        top: -50%;
-        transform: rotate(130deg);
-      }
+      clip-path: polygon(100% 0, 100% 55%, 70% 70%, 0 40%, 0 0);
     }
   }
 }

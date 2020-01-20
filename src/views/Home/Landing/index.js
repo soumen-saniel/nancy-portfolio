@@ -19,14 +19,14 @@ const ProfilePicture = () => {
 
   return <Img
     fluid={data.file.childImageSharp.fluid}
-    objectFit='cover'
+    className={styles.landing_profile_img}
   />
 }
 
 const Landing = (props) => {
   return (
-    <div className={styles.root}>
-      <section className={styles.sectionContent}>
+    <div className={styles.landing_root}>
+      <section className={styles.landing_section_content}>
         <h1>The Thought <br/>Evangelist</h1>
         <p>
           Data Analyst | Writer | Speaker | Traveler | Voracious Reader
@@ -43,7 +43,7 @@ const Landing = (props) => {
           <Button filled>CONTACT</Button>
         </section>
       </section>
-      <div className={styles.sectionImg}>
+      <div className={styles.landing_section_img}>
         <ProfilePicture />
       </div>
     </div>
