@@ -18,6 +18,11 @@ small {
     font-size: 9.6px;
     line-height: 12px;
   }
+
+  @include media("<sm") {
+    font-size: 7.2px;
+    line-height: 9px;
+  }
 }
 
 p {
@@ -31,6 +36,11 @@ p {
   @include media("<lg") {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  @include media("<sm") {
+    font-size: 9px;
+    line-height: 11px;
   }
 }
 
@@ -46,6 +56,11 @@ h4 {
     font-size: 15px;
     line-height: 18px;
   }
+
+  @include media("<sm") {
+    font-size: 11.25px;
+    line-height: 14px;
+  }
 }
 
 h3 {
@@ -59,6 +74,11 @@ h3 {
   @include media("<lg") {
     font-size: 18.75px;
     line-height: 23px;
+  }
+
+  @include media("<sm") {
+    font-size: 14.0625px;
+    line-height: 17px;
   }
 }
 
@@ -74,6 +94,11 @@ h2 {
     font-size: 23.4375px;
     line-height: 29px;
   }
+
+  @include media("<sm") {
+    font-size: 17.5781px;
+    line-height: 21px;
+  }
 }
 
 h1 {
@@ -85,8 +110,13 @@ h1 {
   color: inherit;
   margin-top: 0px;
 
-  @include media("<lg") {
+  @include media("<md") {
     font-size: 29.2969px;
     line-height: 36px;
+  }
+
+  @include media("<sm") {
+    font-size: 21.9727px;
+    line-height: 27px;
   }
 }

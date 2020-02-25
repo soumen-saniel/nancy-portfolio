@@ -33,9 +33,14 @@
     height: calc(100vh - 110px);
   }
 
-  @include media("<sm") {
-    height: calc(100vh - 70px);
+  @include media("<md") {
+    height: calc(100vh - 60px);
     width: calc(100vw - 40px);
+  }
+
+  @include media("<sm") {
+    height: calc(100vh - 40px);
+    width: calc(100vw - 20px);
   }
 
   &:before {
