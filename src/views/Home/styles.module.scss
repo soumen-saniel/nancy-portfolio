@@ -24,6 +24,7 @@
 .home_social_links {
   align-items: center;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   width: 100px;
 
@@ -34,11 +35,10 @@
 
 .home_explore_more {
   align-items: center;
-  bottom: 40px;
   display: flex;
   flex-flow: column;
+  margin-top: 60px;
   justify-content: center;
-  position: absolute;
 
   div {
     color: $bg-2;
