@@ -1,0 +1,33 @@
+@import 'src/styles/variables.scss';
+
+.menu_nav {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.menu_links {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 74px;
+  &:hover {
+    background-color: $ct-2;
+    border-radius: 8px;
+    color: $bg-2;
+  }
+
+  .active {
+    background-color: $ct-2;
+    border-radius: 8px;
+    color: $bg-2;
+  }
+}
+
+.menu_scroll_indicator {
+  height: 80px;
+  width: 2px;
+  background: linear-gradient(to bottom, $bg-3 0%, rgba(255,255,255, 0) 100%);
+}

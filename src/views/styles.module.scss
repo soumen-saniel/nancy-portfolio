@@ -1,0 +1,58 @@
+@import 'src/styles/variables.scss';
+
+.view_root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+
+.view_menu {
+  width: 150px;
+
+  @include media("<md") {
+    display: none;
+  }
+}
+
+.view_content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.view_social_links {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100px;
+
+  @include media("<sm") {
+    display: none;
+  }
+}
+
+.view_explore_more {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  margin-top: 60px;
+  justify-content: center;
+
+  div {
+    color: $bg-2;
+    margin-bottom: 45px;
+    margin-left: 2px;
+    transform: rotate(-90deg);
+  }
+}
+
+@media (orientation: portrait) {
+  .view_menu {
+    display: none;
+  }
+
+  .view_social_links {
+    display: none;
+  }
+}

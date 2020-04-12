@@ -5,12 +5,10 @@ import Arrow from 'src/assets/icons/Arrow.svg'
 // Components
 import MenuDesktop from 'src/components/MenuDesktop'
 import SocialLinks from 'src/components/SocialLinks'
-// Views
-import Landing from './Landing'
 
-import styles from 'src/views/styles.module.scss'
+import styles from '../styles.module.scss'
 
-const Home = ({ location }) => {
+const Articles = ({ location }) => {
   return (
     <div className={styles.view_root}>
       <div className={styles.view_menu}>
@@ -18,8 +16,8 @@ const Home = ({ location }) => {
           location={location}
         />
       </div>
-      <section className={styles.view_content}>
-        <Landing/>
+      <section className={styles.view_content} id='section-landing'>
+        <h1>Articles</h1>
       </section>
       <div className={styles.view_social_links}>
         <SocialLinks/>
@@ -34,8 +32,8 @@ const Home = ({ location }) => {
   )
 }
 
-Home.propTypes = {
+Articles.propTypes = {
   location: PropTypes.object
 }
 
-export default Home
+export default Articles

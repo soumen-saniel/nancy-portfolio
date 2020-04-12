@@ -6,7 +6,33 @@ module.exports = {
     title: 'Nancy Goel',
     description: 'Nancy Goel',
     author: 'Nancy Goel',
-    siteUrl: 'https://soumen-saniel.github.io/nancy-portfolio/'
+    siteUrl: 'https://soumen-saniel.github.io/nancy-portfolio/',
+    menuLinks: [
+      {
+        name: 'About',
+        link: '/'
+      },
+      {
+        name: 'Articles',
+        link: '/articles'
+      },
+      {
+        name: 'Stories',
+        link: '/stories'
+      },
+      {
+        name: 'Blogs',
+        link: '/blogs'
+      },
+      {
+        name: 'Videos',
+        link: '/videos'
+      },
+      {
+        name: 'Contact',
+        link: '/contact'
+      }
+    ]
   },
   plugins: [
     /**

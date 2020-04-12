@@ -5,10 +5,10 @@ import SEO from 'src/components/seo'
 // Views
 import Home from 'src/views/Home'
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title='Home' />
-    <Home/>
+    <Home {...props} />
   </Layout>
 )
 
