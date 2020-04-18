@@ -27,8 +27,21 @@
   justify-content: center;
   width: 100px;
 
+  @include media("<md") {
+    display: block;
+    margin-bottom: -25px;
+    position: fixed;
+    right: 15px;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 20px;
+  }
+
   @include media("<sm") {
-    display: none;
+    bottom: 50px;
+    left: 15px;
+    margin: 0px;
+    transform: none;
   }
 }
 
@@ -45,14 +58,8 @@
     margin-left: 2px;
     transform: rotate(-90deg);
   }
-}
 
-@media (orientation: portrait) {
-  .view_menu {
-    display: none;
-  }
-
-  .view_social_links {
+  @include media("<md") {
     display: none;
   }
 }

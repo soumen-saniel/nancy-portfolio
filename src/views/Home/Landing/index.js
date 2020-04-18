@@ -27,7 +27,7 @@ const Landing = (props) => {
   return (
     <div className={styles.landing_root}>
       <section className={styles.landing_section_content}>
-        <h1>The Thought <br/>Evangelist</h1>
+        <h1>The Thought <br />Evangelist</h1>
         <p>
           Data Analyst | Writer | Speaker | Traveler | Voracious Reader
         </p>
@@ -39,7 +39,7 @@ const Landing = (props) => {
           Believe in expression of thought, <br/>
           so do I love to write.
         </h4>
-        <section>
+        <section className='hiddenMobile'>
           <Button filled>CONTACT</Button>
         </section>
       </section>

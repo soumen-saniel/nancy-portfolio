@@ -1,7 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import get from 'lodash/get'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import findIndex from 'lodash/findIndex'
+import TransitionLink from 'gatsby-plugin-transition-link'
+import { useStaticQuery, graphql } from 'gatsby'
+import classNames from 'classnames'
 // Styles
 import styles from './style.module.scss'
 
@@ -24,18 +27,32 @@ const useLinks = () => {
 
 const MenuDesktop = ({ location }) => {
   const links = useLinks()
+  const activeLinkIndex = findIndex(links, (link) => location.pathname === link.link)
   return (
     <nav className={styles.menu_nav}>
-      {links.map((link) => {
+      {links.map((link, index) => {
         return (
           <React.Fragment key={link.name}>
-            <div className={styles.menu_scroll_indicator} />
-            <Link
-              className={styles.menu_links}
+            <div
+              className={classNames(
+                styles.menu_scroll_indicator,
+                {
+                  [styles.menu_scroll_indicator_active]: index <= activeLinkIndex
+                }
+              )}
+            />
+            <TransitionLink
+              activeClassName={styles.menu_active}
+              className={classNames(
+                styles.menu_links,
+                {
+                  [styles.menu_active]: index <= activeLinkIndex
+                }
+              )}
               to={link.link}
             >
               <small>{link.name}</small>
-            </Link>
+            </TransitionLink>
           </React.Fragment>
         )
       })}

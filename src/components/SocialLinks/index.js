@@ -5,11 +5,11 @@ import Instagram from 'src/assets/icons/Instagram.svg'
 import LinkedIN from 'src/assets/icons/LinkedIN.svg'
 import Twitter from 'src/assets/icons/Twitter.svg'
 
-import Styles from './styles.module.scss'
+import styles from './styles.module.scss'
 
 const SocialLinks = () => {
   return (
-    <nav className={Styles.root}>
+    <nav className={styles.root}>
       <a>
         <img src={Facebook} />
       </a>

@@ -7,6 +7,10 @@
   height: 100%;
   position: relative;
   width: 100%;
+
+  @include media("<sm") {
+    display: block;
+  }
 }
 
 .landing_section_content {
@@ -24,6 +28,15 @@
   section {
     margin-top: 50px;
   }
+
+  @include media("<sm") {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    h1, p {
+      text-align: center;
+    }
+  }
 }
 
 .landing_section_img {
@@ -31,22 +44,23 @@
   align-self: flex-end;
   flex: 0 0 50%;
   overflow: visible;
+
+  @include media("<md") {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .landing_profile_img {
   max-width: 450px;
   overflow: visible;
   width: 100%;
-}
 
-@media (orientation: portrait) {
-  .landing_root {
-    flex-flow: column;
+  @include media("<xl") {
+    width: 80%;
   }
 
-  .landing_section_content {
-    padding: 20px 10px;
+  @include media("<md") {
+    width: 70%;
   }
-
-  .landing_section_img {}
 }

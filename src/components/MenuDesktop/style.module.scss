@@ -18,16 +18,21 @@
     border-radius: 8px;
     color: $bg-2;
   }
+}
 
-  .active {
-    background-color: $ct-2;
-    border-radius: 8px;
-    color: $bg-2;
-  }
+.menu_active {
+  background-color: $ct-2;
+  border-radius: 8px;
+  color: $bg-2;
 }
 
 .menu_scroll_indicator {
   height: 80px;
   width: 2px;
   background: linear-gradient(to bottom, $bg-3 0%, rgba(255,255,255, 0) 100%);
+}
+
+.menu_scroll_indicator_active {
+  background: $ct-2;
+  width: 4px;
 }

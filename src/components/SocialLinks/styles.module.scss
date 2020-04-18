@@ -7,10 +7,24 @@
 
   a {
     cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   img {
-    margin-bottom: 30px;
     width: 30px;
+
+    @include media("<md") {
+      width: 20px;
+    }
+  }
+
+  @include media("<md") {
+    width: 20px;
+    height: auto;
   }
 }
