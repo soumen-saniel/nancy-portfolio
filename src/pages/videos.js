@@ -6,7 +6,7 @@ import SEO from 'src/components/seo'
 import Videos from 'src/views/Videos'
 
 const VideosPage = (props) => (
-  <Layout>
+  <Layout {...props}>
     <SEO title='Videos' />
     <Videos {...props} />
   </Layout>

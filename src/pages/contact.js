@@ -6,7 +6,7 @@ import SEO from 'src/components/seo'
 import Contact from 'src/views/Contact'
 
 const ContactPage = (props) => (
-  <Layout>
+  <Layout {...props}>
     <SEO title='Contact' />
     <Contact {...props} />
   </Layout>

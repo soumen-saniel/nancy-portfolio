@@ -8,7 +8,7 @@ import Header from 'src/components/Header'
 function Layout (props) {
   return (
     <div className={styles.layout_root}>
-      <Header/>
+      <Header {...props}/>
       <main className={styles.layout_content}>
         <div className={styles.layout_content_wrapper}>
           {props.children}

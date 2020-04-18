@@ -6,7 +6,7 @@ import SEO from 'src/components/seo'
 import Home from 'src/views/Home'
 
 const IndexPage = (props) => (
-  <Layout>
+  <Layout {...props}>
     <SEO title='Home' />
     <Home {...props} />
   </Layout>

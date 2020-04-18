@@ -6,7 +6,7 @@ import SEO from 'src/components/seo'
 import Stories from 'src/views/Stories'
 
 const StoriesPage = (props) => (
-  <Layout>
+  <Layout {...props}>
     <SEO title='Stories' />
     <Stories {...props} />
   </Layout>

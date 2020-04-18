@@ -111,6 +111,7 @@ module.exports = {
       options: {
         src: path.join(__dirname, 'src')
       }
-    }
+    },
+    'gatsby-plugin-transition-link'
   ]
 }

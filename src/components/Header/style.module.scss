@@ -9,18 +9,16 @@
   align-items: center;
   display: flex;
   height: 60px;
+  justify-content: space-between;
   margin: 0 auto;
   max-width: 1600px;
   width: 90vw;
 
   @include media("<md") {
-    height: 40px;
-    width: calc(100vw - 40px);
-  }
-
-  @include media("<sm") {
-    height: 30px;
-    width: calc(100vw - 20px);
+    background: #FFFFFF;
+    height: 50px;
+    padding: 0px 20px;
+    width: auto;
   }
 }
 
@@ -30,8 +28,57 @@
   @include media("<md") {
     height: 30px;
   }
+}
 
-  @include media("<sm") {
-    height: 20px;
+.menu_button {
+  display: none;
+
+  @include media("<md") {
+    cursor: pointer;
+    display: block;
+    height: 40px;
   }
+}
+
+.menu_drawer {
+  background-color: $ct-1;
+  box-shadow: -5px 0px 20px rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 50px);
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  width: 200px;
+  z-index: $drawer;
+}
+
+.menu_links {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  padding: 10px 20px;
+  width: auto;
+
+  h2 {
+    color: $text-secondary;
+    align-self: flex-end;
+  }
+}
+
+.menu_active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu_enter {
+  right: -200px;
+}
+.menu_enter_active {
+  right: 0px;
+  transition: all 150ms ease-out;
+}
+.menu_exit {
+  right: 0px;
+}
+.menu_exit_active {
+  right: -200px;
+  transition: all 150ms ease-in;
 }
