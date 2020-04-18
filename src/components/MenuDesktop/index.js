@@ -25,7 +25,6 @@ const useLinks = () => {
 const MenuDesktop = ({ location }) => {
   console.log(location)
   const links = useLinks()
-  console.log(links)
   return (
     <nav className={styles.menu_nav}>
       {links.map((link) => {
