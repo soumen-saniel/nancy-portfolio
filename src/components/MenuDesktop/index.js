@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import get from 'lodash/get'
 import findIndex from 'lodash/findIndex'
+import last from 'lodash/last'
 import TransitionLink from 'gatsby-plugin-transition-link'
 import { useStaticQuery, graphql } from 'gatsby'
 import classNames from 'classnames'
@@ -27,7 +28,8 @@ const useLinks = () => {
 
 const MenuDesktop = ({ location }) => {
   const links = useLinks()
-  const activeLinkIndex = findIndex(links, (link) => location.pathname === link.link)
+  console.log(last(location.pathname.split('/')))
+  const activeLinkIndex = findIndex(links, (link) => '/' + last(location.pathname.split('/')) === link.link)
   return (
     <nav className={styles.menu_nav}>
       {links.map((link, index) => {

@@ -32,7 +32,8 @@ module.exports = {
         name: 'Contact',
         link: '/contact'
       }
-    ]
+    ],
+    socialLinks: {}
   },
   plugins: [
     /**
@@ -112,6 +113,7 @@ module.exports = {
         src: path.join(__dirname, 'src')
       }
     },
-    'gatsby-plugin-transition-link'
+    'gatsby-plugin-transition-link',
+    'gatsby-plugin-netlify-cms'
   ]
 }
